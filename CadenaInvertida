@@ -1,0 +1,27 @@
+package Ejercicios;
+
+import java.util.Scanner;
+
+public class Cadena_al_reves {
+
+    //Escribe el código que devuelva una cadena al revés.
+
+
+   public static class Reves {
+
+       public static void main(String[] args) {
+
+           System.out.println("------\n Texto al reves\n-----");
+
+           Scanner leer = new Scanner(System.in);
+           String contenido ;
+           System.out.println("Escribe un texto ");
+           contenido = leer.nextLine();
+
+           StringBuilder reves = new StringBuilder(contenido);
+           contenido = reves.reverse().toString();
+           System.out.println(contenido);
+       }
+   }
+}
+
