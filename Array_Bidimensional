@@ -1,0 +1,26 @@
+package Ejercicios;
+
+public class arrayBidimen {
+
+
+    public static void main(String[] args) {
+
+
+
+    int Bidi[][] = {
+            {10 , 20 , 30, 40},
+            {1 , 2 , 3 , 4}
+    };
+
+    for (int i = 0; i < Bidi.length; i++){
+
+        for (int j = 0; j < Bidi[i].length; j++){
+
+            System.out.println("Fila : " + (i + 1) + " Columna: " + (j + 1) +
+                    "\nE1 valor es : " + Bidi[i][j] + "\n");
+        }
+    }
+
+
+    }
+}
