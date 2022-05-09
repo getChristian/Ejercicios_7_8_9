@@ -1,0 +1,37 @@
+package Ejercicios;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class arrayList {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> lista = new ArrayList<String>();
+
+        lista.add("Paco ");
+        lista.add("Antonio ");
+        lista.add("Ruben ");
+        lista.add("Lorena ");
+        lista.add("Raquel ");
+
+
+        LinkedList<String> lista2 = new LinkedList<String>();
+
+        for (int i = 0; i < lista.size(); i++){
+            lista2.add(lista.get(i));
+        }
+
+        System.out.println("Datos del Array : ");
+        for(String s : lista){
+            System.out.println(s + " ");
+        }
+
+        System.out.println("\n\nDatos de la LinkedList: ");
+        for (String datos : lista2){
+            System.out.println(datos + " ");
+        }
+
+
+    }
+}
