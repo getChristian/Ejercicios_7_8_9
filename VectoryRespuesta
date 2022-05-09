@@ -1,0 +1,24 @@
+public class ejVector {
+
+    public static void main(String[] args) {
+
+        Vector vector = new Vector();
+
+        vector.add(1);
+        vector.add(2);
+        vector.add(3);
+        vector.add(4);
+        vector.add(5);
+
+        System.out.println("Vector antes del borrado " + vector);
+
+        vector.remove(2);
+        vector.remove(1);
+
+        System.out.println("Vector despues del borrado " + vector);
+//Respuesta sobre los vectores :
+
+        System.out.println("Se gasta mucha memoria, cuando se sobrepasa el limite la dimesion del vector se duplica " );
+
+    }
+}
