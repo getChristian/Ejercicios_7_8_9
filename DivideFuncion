@@ -1,0 +1,29 @@
+package Ejercicios;
+
+import java.util.Scanner;
+
+public class Funcion_divide {
+
+    private static int Divide(int a, int b) throws ArithmeticException {
+        return a / b;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Introduce los numeros para dividir ");
+        System.out.println("Num 1: ");
+        int a = scan.nextInt();
+        System.out.println("Num 2: ");
+        int b =  scan.nextInt();
+
+        try{
+            System.out.println("Resultado " + Divide(a, b));
+        }catch (ArithmeticException e){
+
+            System.out.println("No es posible hacerlo ");
+        } finally {
+            System.out.println("Ejemplo de código ");
+        }
+    }
+}
